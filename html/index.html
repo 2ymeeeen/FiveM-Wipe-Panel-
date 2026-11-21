@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><link rel="stylesheet" href="style.css"><title>UltimateX Wipe Control</title></head>
+<body>
+<div id="app" class="hidden">
+ <div class="wrap"><div class="window"><div class="inner">
+  <aside>
+   <div class="brand"><img class="logo" src="logo.png" alt=""><div><b>UltimateX</b><small></small></div></div>
+   <nav aria-label="Administration categories">
+   <div class="sec">OVERVIEW</div>
+   <button class="nav on" data-go="dash"><i aria-hidden="true">&#8962;</i>Dashboard</button>
+   <div class="sec">PLAYER MANAGEMENT</div>
+   <button class="nav" data-go="target"><i aria-hidden="true">&#9678;</i>Find a player</button>
+   <button class="nav" data-go="veh"><i aria-hidden="true">&#9635;</i>Player vehicles</button>
+   <div class="sec">MONEY &amp; ECONOMY</div>
+   <button class="nav" data-go="money"><i aria-hidden="true">$</i>Balances &amp; rankings</button>
+   <button class="nav" data-go="econ"><i aria-hidden="true">%</i>Economy adjustments</button>
+   <div class="sec">WIPE &amp; RECOVERY</div>
+   <button class="nav" data-go="wipe"><i aria-hidden="true">&#9003;</i>Wipe player data</button>
+   <button class="nav" data-go="mwipe"><i aria-hidden="true">$</i>Reset player money</button>
+   <button class="nav" data-go="vault"><i aria-hidden="true">&#8634;</i>Backups &amp; restore</button>
+   </nav>
+   <div class="grow"></div><div id="chip"></div>
+  <div class="ultimate-footer"><span class="ultimate-footer-dot" aria-hidden="true"></span><span><strong>UltimateX</strong><small>Wipemenu v1.0</small></span></div></aside>
+  <section class="main">
+   <header><div><small class="eyebrow">UltimateX ADMIN CONTROL</small><h1 id="title">Dashboard</h1></div>
+    <div class="hbtn"><span class="secure"><i></i>SECURE SESSION</span><button class="btn" id="refresh">Refresh</button><button class="btn pri" id="close">Close</button></div></header>
+   <div id="page"></div>
+  </section>
+ </div></div></div>
+ <div id="modal" class="hidden"></div><div id="toast" role="status" aria-live="polite"></div>
+</div>
+<script src="script.js"></script>
+</body></html>
